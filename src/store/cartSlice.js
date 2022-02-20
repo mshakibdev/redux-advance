@@ -8,6 +8,7 @@ const cartSlice = createSlice({
   },
   reducers: {
     addItemToCart: (state, action) => {
+      console.log("state",state);
       const newItem = action.payload;
       const existingItem = state.items.find(item.id === newItem.id);
       if (!existingItem) {
@@ -18,8 +19,8 @@ const cartSlice = createSlice({
           title: newItem.name,
         });
       } else {
-        existingItem.quantity++,
-          (existingItem.price = existingItem.price + newItem.price);
+        existingItem.quantity++;
+        existingItem.price = existingItem.price + newItem.price;
       }
     },
     removeItemFromCart: (state) => {
