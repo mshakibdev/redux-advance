@@ -7,14 +7,14 @@ const ProductItem = (props) => {
   const { title, price, description, id } = props;
   const dispatch = useDispatch();
   const addToCartHandler = () => {
-    dispatch(
-      cartActions.addItemToCart({
-        id,
-        title,
-        price,
-        description,
-      })
-    );
+    const product = {
+      id,
+      title,
+      price,
+      description,
+    };
+    // dispatch product object
+    dispatch(cartActions.addItemToCart(product));
   };
   return (
     <li className={classes.item}>

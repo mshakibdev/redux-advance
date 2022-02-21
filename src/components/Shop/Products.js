@@ -5,74 +5,74 @@ const Products = (props) => {
   const DUMMY_DATA = [
     {
       id: 1,
-      name: "Vinegar - Cider",
+      title: "Vinegar - Cider",
       price: 997,
       description: "Other glossotomy",
     },
     {
       id: 2,
-      name: "Coke - Classic, 355 Ml",
+      title: "Coke - Classic, 355 Ml",
       price: 845,
       description: "LITT les hd/nck,guidance",
     },
     {
       id: 3,
-      name: "Juice - Apple, 341 Ml",
+      title: "Juice - Apple, 341 Ml",
       price: 398,
       description: "Contr phlebogram-hd/neck",
     },
     {
       id: 4,
-      name: "Broom - Corn",
+      title: "Broom - Corn",
       price: 231,
       description: "Removal brain stim lead",
     },
     {
       id: 5,
-      name: "Pike - Frozen Fillet",
+      title: "Pike - Frozen Fillet",
       price: 664,
       description: "Post nasal pac for epist",
     },
     {
       id: 6,
-      name: "Tortillas - Flour, 12",
+      title: "Tortillas - Flour, 12",
       price: 705,
       description: "Man replac invert uterus",
     },
     {
       id: 7,
-      name: "Bagel - Plain",
+      title: "Bagel - Plain",
       price: 728,
       description: "Remove eye prosthesis",
     },
     {
       id: 8,
-      name: "Wine - Fume Blanc Fetzer",
+      title: "Wine - Fume Blanc Fetzer",
       price: 883,
       description: "Appl ext fix-chest cage",
     },
     {
       id: 9,
-      name: "Sterno - Chafing Dish Fuel",
+      title: "Sterno - Chafing Dish Fuel",
       price: 686,
       description: "Remov intralum gastr FB",
     },
     {
       id: 10,
-      name: "Tomatoes - Orange",
+      title: "Tomatoes - Orange",
       price: 113,
       description: "Incisional hernia repair",
     },
   ];
   return (
-    <section className={classes.products}>
+    <section classtitle={classes.products}>
       <h2>Buy your favorite products</h2>
       <ul>
         {DUMMY_DATA.map((product) => (
           <ProductItem
             key={product.id}
             id={product.id}
-            title={product.name}
+            title={product.title}
             price={product.price}
             description={product.description}
           />
